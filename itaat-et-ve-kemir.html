@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>İtaat et ve Kemir</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .top {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .reader {
+            width: 100%;
+            min-height: calc(100vh - 60px);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .side-ad {
+            width: 160px;
+            min-height: 600px;
+            background: #222;
+            color: #888;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .book {
+            width: min(70vw, 700px);
+            height: 90vh;
+            background: white;
+        }
+
+        .book iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 900px) {
+            .side-ad {
+                display: none;
+            }
+
+            .book {
+                width: 100%;
+                height: 90vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <a class="back" href="index.html">← Back to Books</a>
+    </div>
+
+    <div class="reader">
+
+        <div class="side-ad">
+            LEFT AD
+        </div>
+
+        <div class="book">
+            <iframe src="İtaat%20et%20ve%20kemir.pdf"></iframe>
+        </div>
+
+        <div class="side-ad">
+            RIGHT AD
+        </div>
+
+    </div>
+
+</body>
+</html>
