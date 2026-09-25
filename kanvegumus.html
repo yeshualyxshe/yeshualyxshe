@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kan ve Gümüş</title>
 
+    <!-- Google AdSense -->
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7304771774737870"
+        crossorigin="anonymous"></script>
+
     <style>
         body {
             margin: 0;
@@ -17,13 +22,9 @@
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
-            width: 120px;
-            height: 300px;
-            background: #222;
-            color: #777;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 160px;
+            min-height: 300px;
+            z-index: 10;
         }
 
         .left-ad {
@@ -38,7 +39,7 @@
             display: flex;
             justify-content: center;
             min-height: 100vh;
-            padding: 20px 150px;
+            padding: 20px 190px;
             box-sizing: border-box;
         }
 
@@ -47,6 +48,11 @@
             height: 95vh;
             border: none;
             background: white;
+        }
+
+        .adsbygoogle {
+            width: 100%;
+            min-height: 300px;
         }
 
         @media (max-width: 800px) {
@@ -68,14 +74,35 @@
 
 <body>
 
+    <!-- SOL REKLAM -->
     <div class="side-ad left-ad">
-        Advertisement
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7304771774737870"
+             data-ad-slot="4054033259"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 
+    <!-- SAĞ REKLAM -->
     <div class="side-ad right-ad">
-        Advertisement
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7304771774737870"
+             data-ad-slot="4054033259"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 
+    <!-- KİTAP -->
     <div class="book-container">
         <iframe src="kanvegumus.pdf"></iframe>
     </div>
