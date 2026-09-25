@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>İtaat et ve Kemir</title>
 
     <!-- Google AdSense -->
@@ -18,13 +19,15 @@
             font-family: Arial, sans-serif;
         }
 
+        /* SOL REKLAM */
         .side-ad {
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
-            width: 160px;
-            min-height: 300px;
-            z-index: 10;
+            width: 120px;
+            height: 300px;
+            z-index: 5;
+            overflow: hidden;
         }
 
         .left-ad {
@@ -35,14 +38,16 @@
             right: 10px;
         }
 
+        /* KİTAP ALANI */
         .book-container {
             display: flex;
             justify-content: center;
             min-height: 100vh;
-            padding: 20px 190px;
+            padding: 20px 150px;
             box-sizing: border-box;
         }
 
+        /* PDF GÖRÜNÜMÜ */
         iframe {
             width: min(70vw, 900px);
             height: 95vh;
@@ -50,12 +55,18 @@
             background: white;
         }
 
-        .adsbygoogle {
-            width: 100%;
-            min-height: 300px;
+        /* REKLAMIN PDF'YE TAŞMAMASI */
+        .side-ad .adsbygoogle {
+            display: block;
+            width: 120px;
+            height: 300px;
+            max-width: 120px;
+            overflow: hidden;
         }
 
+        /* MOBİL */
         @media (max-width: 800px) {
+
             .side-ad {
                 display: none;
             }
@@ -77,7 +88,6 @@
     <!-- SOL REKLAM -->
     <div class="side-ad left-ad">
         <ins class="adsbygoogle"
-             style="display:block"
              data-ad-client="ca-pub-7304771774737870"
              data-ad-slot="4054033259"
              data-ad-format="auto"
@@ -87,11 +97,11 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+
 
     <!-- SAĞ REKLAM -->
     <div class="side-ad right-ad">
         <ins class="adsbygoogle"
-             style="display:block"
              data-ad-client="ca-pub-7304771774737870"
              data-ad-slot="4054033259"
              data-ad-format="auto"
@@ -101,6 +111,7 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+
 
     <!-- KİTAP -->
     <div class="book-container">
